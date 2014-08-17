@@ -16,7 +16,7 @@ class Jobs extends CI_Controller {
         'category' => $this->job_model->category(),
         'tab' => $this->job_model->category(),
       ),
-      'view' => array('carousel','post_job','content'),
+      'view' => array('carousel','post_job','content','login'),
     );
 
     foreach($data['data']['tab'] as $content)
@@ -33,7 +33,7 @@ class Jobs extends CI_Controller {
       'data' => array(
         'category' => $this->job_model->category($id),
       ),
-      'view' => array('post_job','jobs/category'),
+      'view' => array('post_job','jobs/category','login'),
     );
 
     $this->load->view('template',$data);
@@ -44,7 +44,7 @@ class Jobs extends CI_Controller {
   {
     $data = array(
       'data' => array('category' => $this->job_model->category()),
-      'view' => array('jobs/new'),
+      'view' => array('jobs/new','login'),
     );
 
     $this->load->view('template',$data);
@@ -56,7 +56,7 @@ class Jobs extends CI_Controller {
       'data' => array(
         'search' => $this->job_model->search(),
       ),
-      'view' => array('post_job','jobs/search'),
+      'view' => array('post_job','jobs/search','login'),
     );
 
     $this->load->view('template',$data);
@@ -70,7 +70,7 @@ class Jobs extends CI_Controller {
         'category' => $this->job_model->category(),
         'detail' => $this->job_model->get_jobs($id),
       ),
-      'view' => array('post_job','jobs/show'),
+      'view' => array('post_job','jobs/show','login'),
     );
 
     $this->load->view('template',$data);

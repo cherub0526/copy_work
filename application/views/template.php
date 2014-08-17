@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Test</title>
+  <title>Work Remotely</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -58,8 +58,11 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li style="padding-right: 20px">
-              <button type="button" class="btn btn-success navbar-btn">Sign In</button>
+            <!-- Sign In  -->
+              <button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">Sign In</button>
 
+
+              <!-- Sign In End -->
             </li>
           </ul>
         </div>
