@@ -12,24 +12,24 @@
           <?php echo form_close();?>
         </div>
         <div class="col-sm-3 col-lg-2">
-          <a id="modal-344345" href="#modal-container-344345" role="button" class="btn btn-primary btn-block" data-toggle="modal">張貼一份 66K+ 工作</a>
+          <a id="modal-344345" href="#modal-container-344345" role="button" class="btn btn-primary btn-block" data-toggle="modal">張貼一份工作</a>
         </div>
         <div class="modal fade" id="modal-container-344345" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-body" style="text-align:center;">
-                <h3> 感謝你願意在這裡分享 66K+ 的工作 </h3>
+                <h3><strong> 感謝你願意在這裡分享工作 </strong></h3>
 
                 <img alt="Shakehand" class="img-responsive" src="http://asset2.66kjobs.com/images/shakehand.png">
 
-                <h4> 66K 工作網是一個專門讓大家張貼以及找到好工作的求職網站。 </h4>
+                <h4><strong> 這是一個能提供你在辦公室以外的任何地點工作的網站。 </strong></h4>
 
 
                 <br><br>
-                <?php echo anchor('jobs/new_job','馬上來張貼好工作吧！',array('class'=>'btn btn-lg btn-default btn-primary'));?>
+                <?php echo anchor('jobs/new_job','馬上來張貼工作，並找到合適的人！',array('class'=>'btn btn-lg btn-default btn-primary'));?>
                 <br><br>
 
-                <p> <a href="#" style="color:#ccc; text-decoration:underline;" data-dismiss="modal"> 我改變心意了，我想貼的這個工作不值得 66 K </a> </p>
+                <p> <a href="#" style="color:#ccc; text-decoration:underline;" data-dismiss="modal"> 我改變心意了，我想找的人得待在辦公室裡 </a> </p>
               </div>
             </div>
           </div>
