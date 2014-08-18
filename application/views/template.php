@@ -47,19 +47,19 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="#">關於本站</a>
+              <?php echo anchor('pages/about', '關於本站');?>
             </li>
             <li>
-              <a href="#">訂閱</a>
+              <?php echo anchor('pages/express', '訂閱');?>
             </li>
             <li>
-              <a href="#">粉絲團</a>
+              <a href="https://zh-tw.facebook.com/" target="_blank">粉絲團</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li style="padding-right: 20px">
             <!-- Sign In  -->
-              <button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">Sign In</button>
+              <button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal"><strong>Sign In</strong></button>
 
 
               <!-- Sign In End -->

@@ -7,7 +7,7 @@ class User extends CI_Controller {
 		parent::__construct();
 		$this->load->helper(array('url','form','html','xml'));
 		$this->load->model('job_model');
-    }
+  }
 
     public function register()  
     {  

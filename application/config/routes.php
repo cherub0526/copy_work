@@ -40,7 +40,6 @@
 
 $route['default_controller'] = "jobs/index";
 $route['404_override'] = '';
-$route['user/(:any)'] = "user/register";
 
 
 /* End of file routes.php */

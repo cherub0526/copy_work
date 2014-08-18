@@ -54,7 +54,7 @@ $i = 0;
 // (including $i incrementation) serveral times. There is no need to define
 // full server array, just define values you need to change.
 $i++;
-$cfg['Servers'][$i]['host']          = 'localhost'; // MySQL hostname or IP address
+$cfg['Servers'][$i]['host']          = '127.0.0.1'; // MySQL hostname or IP address
 $cfg['Servers'][$i]['port']          = '';          // MySQL port - leave blank for default port
 $cfg['Servers'][$i]['socket']        = '';          // Path to the socket - leave blank for default socket
 $cfg['Servers'][$i]['connect_type']  = 'tcp';       // How to connect to MySQL server ('tcp' or 'socket')

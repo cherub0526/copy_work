@@ -2,20 +2,48 @@
 
 class Pages extends CI_Controller {
 
-	public function view($page = 'home')
+	public function __construct()
 	{
+		parent::__construct();
+		$this->load->helper(array('url','form','html','xml'));
+		$this->load->model('job_model');
+	}
 
-		if ( ! file_exists('application/views/pages/'.$page.'.php'))
+
+	public function about($page='about')
+	{
+		
+		$data = array(
+			'data' => array(
+				'category' => $this->job_model->category(),
+				'tab' => $this->job_model->category(),
+				),
+			'view' => array('login','pages/about'),
+			);
+		foreach($data['data']['tab'] as $content)
 		{
-		    // 哇勒!我們沒有這個頁面!
-			show_404();
+			$data['data']['result'][$content['category_id']] = $this->job_model->show_jobs($content['category_id'])->result_array();
 		}
 
-		$data['title'] = ucfirst($page); // 第一個字母大寫
-
-		$this->load->view('templates/header', $data);
-		$this->load->view('pages/'.$page, $data);
-		$this->load->view('templates/footer', $data);
-
+		$this->load->view('template',$data);
 	}
+
+	public function express($page='about')
+	{
+		
+		$data = array(
+			'data' => array(
+				'category' => $this->job_model->category(),
+				'tab' => $this->job_model->category(),
+				),
+			'view' => array('login','pages/express'),
+			);
+		foreach($data['data']['tab'] as $content)
+		{
+			$data['data']['result'][$content['category_id']] = $this->job_model->show_jobs($content['category_id'])->result_array();
+		}
+
+		$this->load->view('template',$data);
+	}
+
 }

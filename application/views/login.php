@@ -29,7 +29,7 @@
                     <div class="modal-footer">
                       <div class="form-group" style="padding-right: 70%">
                         <p class="help-block" style="display: inline">還不是會員嗎？</p>
-                        <a href="user/register">立即註冊</a>
+                        <?php echo anchor('user/register', '立即註冊');?>
                       </div>
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                       <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
