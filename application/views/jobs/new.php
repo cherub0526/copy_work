@@ -1,9 +1,21 @@
 <div class="container">
   <div class="row clearfix">
-    <div class="col-md-12 column">
-      <h4>
+    <div class="col-md-6 column" style="padding-top: 30px">
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          40% Complete
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 column" style="padding-top: 15px">
+      <h5>
         你張貼的工作會在這個網站上停留三十天，三十天過後這個徵才啟事會過期，你可以隨時再回來重新張貼工作廣告。
-      </h4>
+      </h5>
+    </div>
+  </div>
+  <div class="row clear-fix">
+    <div class="col-md-12 column">
+      
       <br>
       <br>
       <h3>STEP 1 : 撰寫工作內容</h3>

@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = '127.0.0.1';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'silverbedsvp96';
+$db['default']['username'] = 'jerry';
+$db['default']['password'] = 'avtech123';
 $db['default']['database'] = 'work_remotely';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
