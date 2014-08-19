@@ -1,4 +1,4 @@
-      <div class="row" style="margin-top: 10px">
+      <div class="row" style="margin-top: 30px">
         <div class="col-sm-9 col-lg-8 col-lg-offset-2">
           <?php echo form_open('jobs/search', array('class'=>'jobs-search-form','role'=>'search'));?>
             <div class="input-group">

@@ -1,4 +1,4 @@
-      <div class="row clearfix">
+      <div class="row clearfix" style="margin-top: 35px">
         <div class="col-md-12 column">
           <div class="tabbable" id="tabs">
             <ul class="nav nav-tabs">
