@@ -1,4 +1,4 @@
-<div style="padding-top: 15px">
+<div>
   <div class="carousel-inner">
     <div class="item active">
       <img src="<?php echo base_url();?>img/remote-work-1.jpg" alt="...">
