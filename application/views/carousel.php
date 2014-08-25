@@ -15,7 +15,7 @@
           只尋找合理通勤範圍內的公司，表示你服務的公司對你而言並非最好。
         </p>
         <p>
-          <?php echo anchor('pages/about', 'Learn more', 'class="btn btn-warning btn-large"');?>
+          <?php echo anchor('pages/about', 'Learn more', 'class="btn btn-success btn-large"');?>
         </p>
       </div>
 <!--       <div class="carousel-caption">

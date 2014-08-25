@@ -117,9 +117,34 @@ class Jobs extends CI_Controller {
     else
     {
       $this->job_model->create_jobs();
-      redirect('jobs/index');
+      redirect('jobs/preview');
     }
   }
+
+  public function preview()
+  {
+    $this->load->library('markdown');
+    $data = array(
+      'data' => array(
+        'category' => $this->job_model->category(),
+        'detail' => $this->job_model->preview_jobs(),
+      ),
+      'view' => array('jobs/preview','login'),
+    );
+
+    $this->load->view('template',$data);
+  }
+
+  public function done()
+  {
+    $data = array(
+      'data' => array(),
+      'view' => array('jobs/done','login'),
+    );
+
+    $this->load->view('template',$data);
+  }
+
 
 }
 

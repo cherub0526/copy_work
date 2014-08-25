@@ -3,9 +3,9 @@
   <div class="col-md-1 column">
   </div>
     <div class="col-md-11 column" style="padding-top: 30px">
-      <h2 style="display: inline; padding-right: 20px"><span class="label label-warning" style="text-shadow:2px 2px 2px #222;">Step 1. 撰寫你的徵才啟事 </sapn></h2>
-      <h2 style="display: inline; padding-right: 20px"><span class="label label-default">Step 2. 預覽你的徵才啟事 </sapn></h2>
-      <h2 style="display: inline; padding-right: 20px"><span class="label label-default">Step 3. 刊登你的徵才啟事 </sapn></h2>
+      <h2 style="display: inline; padding-right: 20px"><p class="label label-success" style="text-shadow:2px 2px 2px #222;">Step 1. 撰寫你的徵才啟事 </p></h2>
+      <h2 style="display: inline; padding-right: 20px"><p class="label label-default">Step 2. 預覽你的徵才啟事 </p></h2>
+      <h2 style="display: inline; padding-right: 20px"><p class="label label-default">Step 3. 刊登你的徵才啟事 </p></h2>
     </div>
   </div>
   <div class="row clear-fix">
@@ -116,7 +116,7 @@
             <div class="col-md-11 column" style="padding-top: 30px">
               <div class="checkbox col-md-5 colum">
                 <div>
-                  <p>只要<strong style="font-size: 18px"> $50 元</strong>，就可以讓您的徵才啟事更加突出！我們將會在您的徵才啟事塗上黃色背景色，讓您的徵才啟事在列表中更加突出！ </p>
+                  <p>只要<strong style="font-size: 18px"> NT$100 元</strong>，就可以讓您的徵才啟事更加突出！我們將會在您的徵才啟事塗上黃色背景色，讓您的徵才啟事在列表中更加突出！ </p>
                 </div>
                 <br>
                 <label>

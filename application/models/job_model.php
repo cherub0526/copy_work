@@ -56,7 +56,7 @@ class Job_model extends CI_Model {
       'jobs_email' => $this->input->post('email'),
       'jobs_update' => date('Y-m-d H:i:s')
     );
-    $this->db->insert('jobs',$data);
+    $this->db->insert('jobs_temp',$data);
   }
 
   public function search()
@@ -73,6 +73,11 @@ class Job_model extends CI_Model {
 
   }
 
+  public function preview_jobs()
+  {
+    $query = $this->db->order_by('jobs_id','desc')->get('jobs_temp');
+    return $query->result_array();
+  }
 }
 
 /* End of file job.php */
