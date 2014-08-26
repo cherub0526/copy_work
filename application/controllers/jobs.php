@@ -116,27 +116,32 @@ class Jobs extends CI_Controller {
     }
     else
     {
-      $this->job_model->create_jobs();
-      redirect('jobs/preview');
+      $this->load->library('markdown');
+      $data = array(
+        'data' => array(
+          'category' => $this->job_model->category(),
+          'jobs_title' => $this->input->post('job_title'),
+          'jobs_category' => $this->input->post('category'),
+          'jobs_lower' => $this->input->post('lower_bound'),
+          'jobs_higher' => $this->input->post('higher_bound'),
+          'jobs_place' => $this->input->post('work_place'),
+          'jobs_description' => $this->input->post('description'),
+          'jobs_hire' => $this->input->post('how_hire'),
+          'jobs_company' => $this->input->post('company'),
+          'jobs_url' => $this->input->post('url'),
+          'jobs_email' => $this->input->post('email'),
+          'jobs_update' => date('Y-m-d H:i:s')
+        ),
+        'view' => array('jobs/preview','login'),
+      );
+
+      $this->load->view('template',$data);
     }
-  }
-
-  public function preview()
-  {
-    $this->load->library('markdown');
-    $data = array(
-      'data' => array(
-        'category' => $this->job_model->category(),
-        'detail' => $this->job_model->preview_jobs(),
-      ),
-      'view' => array('jobs/preview','login'),
-    );
-
-    $this->load->view('template',$data);
   }
 
   public function done()
   {
+    $this->job_model->create_jobs();
     $data = array(
       'data' => array(),
       'view' => array('jobs/done','login'),
@@ -144,8 +149,6 @@ class Jobs extends CI_Controller {
 
     $this->load->view('template',$data);
   }
-
-
 }
 
 /* End of file jobs.php */
